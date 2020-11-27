@@ -93,9 +93,9 @@ if(!empty($_POST)){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Idea Box | 会員登録</title>
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>IdeaBox | 会員登録</title>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/ress/dist/ress.min.css" >
+    <link rel="stylesheet" type="text/css" href="style.css" >
 </head>
 <body class="background-color">
     <div class ="form-wrap">
@@ -104,29 +104,20 @@ if(!empty($_POST)){
         <p class = "catch">アイデアから、アイデアを。</p>
         <form action="" method="post">
 
-            <input class="form-input" type="text" name="email" placeholder="Eメール">
-            <div class="area-msg">
-                <?php 
-                    if(!empty($err_msg['email'])) echo $err_msg['email'];
-                ?>
+            <input class="form-input js-email" type="text" name="email" placeholder="Eメール">
+            <div class="area-msg js-msg-email">
             </div>
 
-            <input class="form-input" type="password" name="password" placeholder="パスワード">
-            <div class="area-msg">
-                <?php 
-                    if(!empty($err_msg['password'])) echo $err_msg['password'];
-                ?>
+            <input class="form-input js-password" type="password" name="password" placeholder="パスワード">
+            <div class="area-msg js-msg-password">
             </div>
 
-            <input class="form-input" type="password" name="password_re" placeholder="パスワード再入力">
-            <div class="area-msg">
-                <?php 
-                    if(!empty($err_msg['password_re'])) echo $err_msg['password_re'];
-                ?>
+            <input class="form-input js-password_re" type="password" name="password_re" placeholder="パスワード再入力">
+            <div class="area-msg js-msg-password_re">
             </div>
 
 
-            <input class="btn form-btn" type="submit" value="新規登録">
+            <input id="ajax-valid" class="btn form-btn" type="submit" value="新規登録">
         </form>
         <div class="form-comment">
         <p>アカウントを作成すると、サービス<a href="">利用規約</a>および<br>
@@ -136,4 +127,9 @@ if(!empty($_POST)){
         </div>
     </div>
 </body>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+<script src="app.js"></script>
 </html>
