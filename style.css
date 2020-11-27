@@ -80,3 +80,11 @@ body {
 .login {
   font-size: 16px;
 }
+
+.area-msg {
+  font-size: 12px;
+  color: red;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
