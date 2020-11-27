@@ -9,7 +9,7 @@ debug('「「「「「「「「「「「「「「「「「「「「「「「「�
 debugLogStart();
 
 //post送信されていた場合
-if(!empty($_POST)){
+if (!empty($_POST)) {
 
     //変数にユーザー情報を代入
     $email = $_POST['email'];
@@ -25,7 +25,7 @@ if(!empty($_POST)){
     debug("未入力チェック完了");
 
 
-    if(empty($err_msg['email']) && empty($err_msg['password']) && empty($err_msg['password_re'])){
+    if (empty($err_msg['email']) && empty($err_msg['password']) && empty($err_msg['password_re'])) {
 
         //emailの形式チェック
         validEmail($email, 'email');
@@ -49,8 +49,8 @@ if(!empty($_POST)){
 
         //パスワードとパスワード再入力が合っているかチェック
         validMatch($password, $password_re, 'password_re');
-            if(empty($err_msg['email']) && empty($err_msg['password']) && empty($err_msg['password_re'])){
-                          //例外処理
+        if (empty($err_msg['email']) && empty($err_msg['password']) && empty($err_msg['password_re'])) {
+            //例外処理
             try {
                 // DBへ接続
                 $dbh = dbConnect();
@@ -61,32 +61,24 @@ if(!empty($_POST)){
                 // クエリ実行
                 $stmt = queryPost($dbh, $sql, $data);
             
-            // クエリ成功の場合
-            if($stmt){
-              //ログイン有効期限（デフォルトを１時間とする）
-              $sesLimit = 60*60;
-              // 最終ログイン日時を現在日時に
-              $_SESSION['login_date'] = time();
-              $_SESSION['login_limit'] = $sesLimit;
-              // ユーザーIDを格納
-              $_SESSION['user_id'] = $dbh->lastInsertId();
+                // クエリ成功の場合
+                if ($stmt) {
+                    //ログイン有効期限（デフォルトを１時間とする）
+                    $sesLimit = 60*60;
+                    // 最終ログイン日時を現在日時に
+                    $_SESSION['login_date'] = time();
+                    $_SESSION['login_limit'] = $sesLimit;
+                    // ユーザーIDを格納
+                    $_SESSION['user_id'] = $dbh->lastInsertId();
   
-              debug('セッション変数の中身：'.print_r($_SESSION,true));
-  
-            //   header("Location:mypage.php"); //マイページへ
-            }
-  
+                    debug('セッション変数の中身：'.print_r($_SESSION, true));
+                }
             } catch (Exception $e) {
                 error_log('エラー発生:' . $e->getMessage());
                 $err_msg['common'] = MSG07;
             }
-  
         }
-
-
-
-            }
-
+    }
 }
 
 echo json_encode($err_msg);

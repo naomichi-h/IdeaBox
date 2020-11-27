@@ -17,9 +17,13 @@ $(function () {
         password_re: $(".js-password_re").val(),
       },
     }).done(function (data) {
-      $(".js-msg-email").text(data.email);
-      $(".js-msg-password").text(data.password);
-      $(".js-msg-password_re").text(data.password_re);
+      if (data.email || data.password || data.password_re) {
+        $(".js-msg-email").text(data.email);
+        $(".js-msg-password").text(data.password);
+        $(".js-msg-password_re").text(data.password_re);
+      } else {
+        window.location.href = "mypage.php";
+      }
     });
   });
 });

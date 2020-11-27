@@ -3,9 +3,9 @@
 // ログ
 //================================
 //ログを取るか
-ini_set('log_errors','on');
+ini_set('log_errors', 'on');
 //ログの出力ファイルを指定
-ini_set('error_log','php.log');
+ini_set('error_log', 'php.log');
 
 //================================
 // デバッグ
@@ -13,11 +13,12 @@ ini_set('error_log','php.log');
 //デバッグフラグ
 $debug_flg = true;
 //デバッグログ関数
-function debug($str){
-  global $debug_flg;
-  if(!empty($debug_flg)){
-    error_log('デバッグ：'.$str);
-  }
+function debug($str)
+{
+    global $debug_flg;
+    if (!empty($debug_flg)) {
+        error_log('デバッグ：'.$str);
+    }
 }
 
 //================================
@@ -37,27 +38,28 @@ session_regenerate_id();
 //================================
 // 画面表示処理開始ログ吐き出し関数
 //================================
-function debugLogStart(){
+function debugLogStart()
+{
     debug('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始');
     debug('セッションID：'.session_id());
-    debug('セッション変数の中身：'.print_r($_SESSION,true));
+    debug('セッション変数の中身：'.print_r($_SESSION, true));
     debug('現在日時タイムスタンプ：'.time());
-    if(!empty($_SESSION['login_date']) && !empty($_SESSION['login_limit'])){
-      debug( 'ログイン期限日時タイムスタンプ：'.( $_SESSION['login_date'] + $_SESSION['login_limit'] ) );
+    if (!empty($_SESSION['login_date']) && !empty($_SESSION['login_limit'])) {
+        debug('ログイン期限日時タイムスタンプ：'.($_SESSION['login_date'] + $_SESSION['login_limit']));
     }
-  }
+}
 
 //================================
 // 定数
 //================================
 //エラーメッセージを定数に設定
-define('MSG01','この項目は必須です。');
+define('MSG01', 'この項目は必須です。');
 define('MSG02', 'Emailの形式で入力してください。');
-define('MSG03','パスワード（再入力）が合っていません。');
-define('MSG04','半角英数字のみご利用いただけます。');
-define('MSG05','6文字以上で入力してください。');
-define('MSG06','256文字以内で入力してください。');
-define('MSG07','エラーが発生しました。しばらく経ってからやり直してください。');
+define('MSG03', 'パスワード（再入力）が合っていません。');
+define('MSG04', '半角英数字のみご利用いただけます。');
+define('MSG05', '6文字以上で入力してください。');
+define('MSG06', '256文字以内で入力してください。');
+define('MSG07', 'エラーが発生しました。しばらく経ってからやり直してください。');
 define('MSG08', 'そのEmailは既に登録されています。');
 define('MSG09', 'メールアドレスまたはパスワードが違います。');
 define('MSG12', '古いパスワードが違います。');
@@ -78,132 +80,160 @@ define('SUC04', '登録しました。');
 $err_msg = array();
 
 //バリデーション関数（未入力チェック）
-function validRequired($str, $key){
+function validRequired($str, $key)
+{
     global $err_msg;
-    if($str === ''){ 
-      $err_msg[$key] = MSG01;
-    }else{
+    if ($str === '') {
+        $err_msg[$key] = MSG01;
+    } else {
         $err_msg[$key] = null;
     }
-  }
+}
 
   //バリデーション関数（Email形式チェック）
-function validEmail($str, $key){
-    if(!preg_match("/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/", $str)){
-      global $err_msg;
-      $err_msg[$key] = MSG02;
+function validEmail($str, $key)
+{
+    global $err_msg;
+
+    if (!preg_match("/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/", $str)) {
+        $err_msg[$key] = MSG02;
+    } else {
+        $err_msg[$key] = null;
     }
 }
 
 //バリデーション関数（Email重複チェック）
-function validEmailDup($email){
+function validEmailDup($email)
+{
     global $err_msg;
     //例外処理
     try {
-      // DBへ接続
-      $dbh = dbConnect();
-      // SQL文作成
-      $sql = 'SELECT count(*) FROM users WHERE email = :email AND delete_flg = 0';
-      $data = array(':email' => $email);
-      // クエリ実行
-      $stmt = queryPost($dbh, $sql, $data);
-      // クエリ結果の値を取得
-      $result = $stmt->fetch(PDO::FETCH_ASSOC);
-      //array_shift関数で配列の先頭を取り出して判定
-      if(!empty(array_shift($result))){
-        $err_msg['email'] = MSG08;
-      }
+        // DBへ接続
+        $dbh = dbConnect();
+        // SQL文作成
+        $sql = 'SELECT count(*) FROM users WHERE email = :email AND delete_flg = 0';
+        $data = array(':email' => $email);
+        // クエリ実行
+        $stmt = queryPost($dbh, $sql, $data);
+        // クエリ結果の値を取得
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        //array_shift関数で配列の先頭を取り出して判定
+        if (!empty(array_shift($result))) {
+            $err_msg['email'] = MSG08;
+        } else {
+            $err_msg['email'] = null;
+        }
     } catch (Exception $e) {
-      error_log('エラー発生:' . $e->getMessage());
-      $err_msg['common'] = MSG07;
-    }
-  }
-
-//バリデーション関数（同値チェック）
-function validMatch($str1, $str2, $key){
-    if($str1 !== $str2){
-      global $err_msg;
-      $err_msg[$key] = MSG03;
-    }
-  }
-
-//バリデーション関数（最小文字数チェック）
-function validMinLen($str, $key, $min = 6){
-    if(mb_strlen($str) < $min){
-      global $err_msg;
-      $err_msg[$key] = MSG05;
-    }
-  }
-  //バリデーション関数（最大文字数チェック）
-  function validMaxLen($str, $key, $max = 256){
-    if(mb_strlen($str) > $max){
-      global $err_msg;
-      $err_msg[$key] = MSG06;
-    }
-  }
-  //バリデーション関数（半角チェック）
-  function validHalf($str, $key){
-    if(!preg_match("/^[a-zA-Z0-9]+$/", $str)){
-      global $err_msg;
-      $err_msg[$key] = MSG04;
+        error_log('エラー発生:' . $e->getMessage());
+        $err_msg['common'] = MSG07;
     }
 }
+
+//バリデーション関数（同値チェック）
+function validMatch($str1, $str2, $key)
+{
+    global $err_msg;
+
+    if ($str1 !== $str2) {
+        $err_msg[$key] = MSG03;
+    } else {
+        $err_msg[$key] = null;
+    }
+}
+
+//バリデーション関数（最小文字数チェック）
+function validMinLen($str, $key, $min = 6)
+{
+    global $err_msg;
+
+    if (mb_strlen($str) < $min) {
+        $err_msg[$key] = MSG05;
+    } else {
+        $err_msg[$key] = null;
+    }
+}
+  //バリデーション関数（最大文字数チェック）
+  function validMaxLen($str, $key, $max = 256)
+  {
+      global $err_msg;
+
+      if (mb_strlen($str) > $max) {
+          $err_msg[$key] = MSG06;
+      } else {
+          $err_msg[$key] = null;
+      }
+  }
+  //バリデーション関数（半角チェック）
+  function validHalf($str, $key)
+  {
+      global $err_msg;
+
+      if (!preg_match("/^[a-zA-Z0-9]+$/", $str)) {
+          $err_msg[$key] = MSG04;
+      } else {
+          $err_msg[$key] = null;
+      }
+  }
 //パスワードチェック
-function validPass($str, $key){
+function validPass($str, $key)
+{
     //半角英数字チェック
     validHalf($str, $key);
     //最大文字数チェック
     validMaxLen($str, $key);
     //最小文字数チェック
     validMinLen($str, $key);
-  }
+}
 
 //selectboxチェック
-function validSelect($str, $key){
-    if(!preg_match("/^[0-9]+$/", $str)){
-      global $err_msg;
-      $err_msg[$key] = MSG15;
+function validSelect($str, $key)
+{
+    if (!preg_match("/^[0-9]+$/", $str)) {
+        global $err_msg;
+        $err_msg[$key] = MSG15;
     }
-  }
+}
   //エラーメッセージ表示
-  function getErrMsg($key){
-    global $err_msg;
-    if(!empty($err_msg[$key])){
-      return $err_msg[$key];
-    }
+  function getErrMsg($key)
+  {
+      global $err_msg;
+      if (!empty($err_msg[$key])) {
+          return $err_msg[$key];
+      }
   }
   
 //================================
 // ログイン認証
 //================================
-function isLogin(){
+function isLogin()
+{
     // ログインしている場合
-    if( !empty($_SESSION['login_date']) ){
-      debug('ログイン済みユーザーです。');
+    if (!empty($_SESSION['login_date'])) {
+        debug('ログイン済みユーザーです。');
   
-      // 現在日時が最終ログイン日時＋有効期限を超えていた場合
-      if( ($_SESSION['login_date'] + $_SESSION['login_limit']) < time()){
-        debug('ログイン有効期限オーバーです。');
+        // 現在日時が最終ログイン日時＋有効期限を超えていた場合
+        if (($_SESSION['login_date'] + $_SESSION['login_limit']) < time()) {
+            debug('ログイン有効期限オーバーです。');
   
-        // セッションを削除（ログアウトする）
-        session_destroy();
+            // セッションを削除（ログアウトする）
+            session_destroy();
+            return false;
+        } else {
+            debug('ログイン有効期限以内です。');
+            return true;
+        }
+    } else {
+        debug('未ログインユーザーです。');
         return false;
-      }else{
-        debug('ログイン有効期限以内です。');
-        return true;
-      }
-  
-    }else{
-      debug('未ログインユーザーです。');
-      return false;
     }
-  }
+}
   
 //================================
 // データベース
 //================================
 //DB接続関数
-function dbConnect(){
+function dbConnect()
+{
     //DBへの接続準備
     $dsn = 'mysql:dbname=ideabox;host=localhost;charset=utf8';
     $user = 'root';
@@ -220,61 +250,63 @@ function dbConnect(){
     // PDOオブジェクト生成（DBへ接続）
     $dbh = new PDO($dsn, $user, $password, $options);
     return $dbh;
-  }
+}
 
 //SQL実行関数
-function queryPost($dbh, $sql, $data){
+function queryPost($dbh, $sql, $data)
+{
     //クエリー作成
     $stmt = $dbh->prepare($sql);
     //プレースホルダに値をセットし、SQL文を実行
-    if(!$stmt->execute($data)){
-      debug('クエリに失敗しました。');
-      debug('失敗したSQL：'.print_r($stmt,true));
-      $err_msg['common'] = MSG07;
-      return 0;
+    if (!$stmt->execute($data)) {
+        debug('クエリに失敗しました。');
+        debug('失敗したSQL：'.print_r($stmt, true));
+        $err_msg['common'] = MSG07;
+        return 0;
     }
     debug('クエリ成功。');
     return $stmt;
-  }
+}
 
 //================================
 // その他
 //================================
 // サニタイズ
-function sanitize($str){
-    return htmlspecialchars($str,ENT_QUOTES);
-  }
+function sanitize($str)
+{
+    return htmlspecialchars($str, ENT_QUOTES);
+}
   // フォーム入力保持
-  function getFormData($str, $flg = false){
-    if($flg){
-      $method = $_GET;
-    }else{
-      $method = $_POST;
-    }
-    global $dbFormData;
-    // ユーザーデータがある場合
-    if(!empty($dbFormData)){
-      //フォームのエラーがある場合
-      if(!empty($err_msg[$str])){
-        //POSTにデータがある場合
-        if(isset($method[$str])){
-          return sanitize($method[$str]);
-        }else{
-          //ない場合（基本ありえない）はDBの情報を表示
-          return sanitize($dbFormData[$str]);
-        }
-      }else{
-        //POSTにデータがあり、DBの情報と違う場合
-        if(isset($method[$str]) && $method[$str] !== $dbFormData[$str]){
-          return sanitize($method[$str]);
-        }else{
-          return sanitize($dbFormData[$str]);
-        }
+  function getFormData($str, $flg = false)
+  {
+      if ($flg) {
+          $method = $_GET;
+      } else {
+          $method = $_POST;
       }
-    }else{
-      if(isset($method[$str])){
-        return sanitize($method[$str]);
+      global $dbFormData;
+      // ユーザーデータがある場合
+      if (!empty($dbFormData)) {
+          //フォームのエラーがある場合
+          if (!empty($err_msg[$str])) {
+              //POSTにデータがある場合
+              if (isset($method[$str])) {
+                  return sanitize($method[$str]);
+              } else {
+                  //ない場合（基本ありえない）はDBの情報を表示
+                  return sanitize($dbFormData[$str]);
+              }
+          } else {
+              //POSTにデータがあり、DBの情報と違う場合
+              if (isset($method[$str]) && $method[$str] !== $dbFormData[$str]) {
+                  return sanitize($method[$str]);
+              } else {
+                  return sanitize($dbFormData[$str]);
+              }
+          }
+      } else {
+          if (isset($method[$str])) {
+              return sanitize($method[$str]);
+          }
       }
-    }
   }
-  
