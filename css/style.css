@@ -9,16 +9,16 @@ body {
 
 .form-wrap {
   background-color: #fff;
+  box-shadow: 0 10px 25px 0 rgba(11, 11, 11, 0.2);
   margin: 200px auto;
   padding: 45px;
   width: 450px;
-  box-shadow: 0 10px 25px 0 rgba(11, 11, 11, 0.2);
 }
 
 .site-icon {
   display: block;
-  width: 55px;
   margin: 0 auto;
+  width: 55px;
 }
 
 .title {
@@ -36,14 +36,14 @@ body {
 }
 
 .form-input {
-  display: block;
   border: rgba(185, 183, 183, 0.4) 1px solid;
+  border-radius: 10px;
+  display: block;
   font-size: 14px;
-  width: 300px;
-  padding: 14px;
   margin: 0 auto;
   margin-bottom: 4px;
-  border-radius: 10px;
+  padding: 14px;
+  width: 300px;
 }
 
 .form-input:focus {
@@ -56,19 +56,19 @@ body {
 }
 
 .btn {
-  display: block;
-  color: #f8f4f4;
   background-color: #fb332a;
-  transition: all 0.5s;
+  color: #f8f4f4;
+  display: block;
+  transition: background-color 0.5s;
 }
 
 .form-btn {
+  border-radius: 10px;
   font-size: 16px;
-  width: 300px;
-  padding: 14px;
   margin: 0 auto;
   margin-top: 12px;
-  border-radius: 10px;
+  padding: 14px;
+  width: 300px;
 }
 
 .form-btn:focus {
@@ -81,15 +81,15 @@ body {
 }
 
 .form-comment a {
-  text-decoration: none;
   color: #fb332a;
+  text-decoration: none;
 }
 
 .form-comment p {
   color: rgba(112, 112, 112, 0.8);
   font-size: 12px;
-  text-align: center;
   margin: 12px;
+  text-align: center;
 }
 
 .login {
@@ -97,9 +97,26 @@ body {
 }
 
 .area-msg {
-  font-size: 12px;
   color: red;
-  width: 300px;
+  font-size: 12px;
   margin: 0 auto;
   margin-bottom: 8px;
+  width: 300px;
+}
+
+.label {
+  font-size: 14px;
+  color: rgba(112, 112, 112, 0.8);
+
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+.checkbox {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 80px;
+  margin: auto;
 }

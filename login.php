@@ -3,7 +3,7 @@
 require('function.php');
 
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
-debug('「　ユーザー登録ページ　');
+debug('「　ログインページ　');
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
 debugLogStart();
 
@@ -16,7 +16,7 @@ debugLogStart();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IdeaBox | 会員登録</title>
+    <title>IdeaBox | ログイン</title>
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/ress/dist/ress.min.css" >
     <link rel="stylesheet" type="text/css" href="css/style.css" >
 </head>
@@ -35,18 +35,16 @@ debugLogStart();
             <div class="area-msg js-msg-password">
             </div>
 
-            <input class="form-input js-password-re" type="password" name="password_re" placeholder="パスワード再入力">
-            <div class="area-msg js-msg-password-re">
-            </div>
+            <label class="label">
+            <input class="checkbox js-login-save" type="checkbox" name="login_save">30日間ログインを省略する
+            </label>
 
 
-            <input id="ajax-valid" class="btn form-btn" type="submit" value="新規登録">
+            <input id="ajax-valid" class="btn form-btn" type="submit" value="ログイン">
         </form>
         <div class="form-comment">
-        <p>アカウントを作成すると、サービス<a href="">利用規約</a>および<br>
-        <a href="">プライバシーポリシー</a>に同意したとみなされます。</p>
-        <p>すでにアカウントをお持ちですか？<br>
-        <a class="login" href="">ログイン</a></p>
+        <p>パスワードを忘れた方は<a href="">コチラ</a></p>
+        <p><a class="signup.php" href="">アカウントを作成</a></p>
         </div>
     </div>
 </body>
@@ -54,5 +52,5 @@ debugLogStart();
   src="https://code.jquery.com/jquery-3.5.1.min.js"
   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
   crossorigin="anonymous"></script>
-<script src="js/ajax_signup.js"></script>
+<script src="js/ajax_login.js"></script>
 </html>
