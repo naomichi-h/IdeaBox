@@ -79,7 +79,7 @@ if (!empty($_POST)) {
                         }
                     } catch (Exception $e) {
                         error_log('エラー発生:' . $e->getMessage());
-                        $err_msg['common'] = MSG07;
+                        $err_msg['password'] = MSG07;
                     }
                 }
             }
