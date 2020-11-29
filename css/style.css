@@ -1,8 +1,92 @@
+/* 共通 */
 body {
   font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体",
     "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
+a {
+  color: #f7f7f7;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #e3a8b1;
+  transition: 0.3s;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ナビゲーション関連 */
+
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  height: 80px;
+  color: #f7f7f7;
+  background-color: rgba(3, 3, 3, 0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: fixed;
+  transition: 0.3s;
+  z-index: 2;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+.menu-item {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.nav-icon {
+  width: 32px;
+  position: relative;
+  top: 5px;
+}
+
+.nav-title {
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro",
+    "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 60px;
+  line-height: 80px;
+}
+
+/* ヒーローバナー関連 */
+
+.hero {
+  background-image: url(../images/light-bulbs.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  color: #f7f7f7;
+  text-align: center;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro",
+    "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+  font-size: 45px;
+  text-shadow: 0 0 20px rgba(227, 123, 137, 0.4), 0 0 50px rgba(0, 0, 0, 0.8);
+}
+
+/* ユーザー登録画面、ログイン画面、パスワードリマインダーの背景 */
 .background-color {
   background-color: rgba(251, 51, 42, 0.15);
 }
@@ -120,3 +204,14 @@ body {
   left: 80px;
   margin: auto;
 }
+
+/* スタート時のアニメーション
+.start {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+} */
