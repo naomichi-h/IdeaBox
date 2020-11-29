@@ -15,30 +15,59 @@
 
             <nav class="nav-menu">
                 <ul class="menu">
-                    <li class="menu-item"><a href="login.php" class="menu-link">login</a></li>
-                    <li class="menu-item"><a href="signup.php" class="menu-link">sign up</a></li>
+                    <li class="menu-item"><a href="login.php" class="link-color1">login</a></li>
+                    <li class="menu-item"><a href="signup.php" class="link-color1">sign up</a></li>
                 </ul>
             </nav>
     </header>
-    <main>
+    <main class="main">
         <section class="hero">
-
-
 
             <h1 class="hero-title">IdeaBox</h1>
             <p class="hero-catch">アイデアから、アイデアを。</p>
             <p class="hero-comment">IdeaBoxは、あなたのひらめきをサポートする</p>
-            <p>アイデア発想ツールです</p>
+            <p class="hero-comment">アイデア発想ツールです</p>
 
         </section>
 
-        <h1 class="hero-catch">アイデアを組み合わせて、新しいアイデアを閃こう</h1>
-        <p class="hero-catch-sub">IdeaBoxはあなたのひらめきをサポートします。</p>
-        <button class="btn"><a href="signup.php">無料で新規登録</a></button>
+        <section class="container">
 
+        <h1 class="top-catch">アイデアを組み合わせて、新しいアイデアを閃こう</h1>
+        <p class="top-catch-sub">IdeaBoxはあなたのひらめきをサポートします。</p>
+        <button onclick="location.href='signup.php'" class="btn"><a href="signup.php" class="link-color1">無料で新規登録</a></button>
+        <p class="top-comment"><a href="login.php" class="link-color2">すでにアカウントをお持ちですか？<span>ログイン</span></a></p>
+        <p class="top-comment"><a href="login.php" class="link-color2">登録をスキップして利用する</a></p>
+
+
+        </section>
+
+        <section class="site-explain">
+            <div class="explain-comment-wrap">
+            <h1 class="explain-title">Idea Seed法のためのツール</h1>
+            <h2 class="explain-title-sub">アイデアの種から、閃く。</h2>
+            <p class="explain-comment">あなたのアイデアの種を登録し、<br>
+                ランダムで表示させます。<br>
+                それらの共通点を探してみましょう。</p>
+
+            <p class="explain-comment-sub">この方法は、<span class="notes">数多のアイデアに関する知見</span>から<br>
+                導き出されたものです。</p>
+            </div>
+
+            <div class="explain-figure-wrap">
+                <img src="images/explain_figure.png" alt="explain_figure" class="explain-figure">
+            </div>
         </section>
 
     </main>
+
+    <footer class="footer">
+        <p>©️2020 IdeaBox. All rights reserved</p>
+        <ul class="footer-menu">
+            <li class="footer-item"><a href="" class="link-color2">利用規約</a></li>
+            <li class="footer-item"><a href="" class="link-color2">プライバシー</a></li>
+        </ul>
+
+    </footer>
 
 
 
@@ -57,10 +86,10 @@
     $(function() {
 	// setTimeout(function(){
 	// 	$('.start p').fadeIn(1600);
-	// },500); //0.5秒後にロゴをフェードイン!
+	// },500); //0.5秒後にロゴをフェードイン
 	setTimeout(function(){
 		$('.start').fadeOut(500);
-	},500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+	},500); //2.5秒後にロゴ含め真っ白背景をフェードアウト
 });
 </script>
 </html>
