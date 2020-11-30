@@ -9,7 +9,7 @@ a {
   transition: 0.3s;
 }
 
-a:hover {
+.link-color-change:hover {
   color: #e3a8b1;
   transition: 0.3s;
 }
@@ -53,6 +53,10 @@ ul {
 
 .link-color2 {
   color: #777;
+}
+
+.link-color3 {
+  color: #fb332a;
 }
 
 .nav-icon {
@@ -245,19 +249,20 @@ ul {
   background-color: #d6332b;
 }
 
-.form-comment a {
-  color: #fb332a;
-  text-decoration: none;
-}
-
-.form-comment p {
+.form-comment {
   color: rgba(112, 112, 112, 0.8);
   font-size: 12px;
   margin: 12px;
   text-align: center;
 }
 
-.login {
+.form-container {
+  border: solid 1px #777;
+  border-radius: 10px;
+  padding: 8px 20px 20px 20px;
+}
+
+.fontsize-m {
   font-size: 16px;
 }
 

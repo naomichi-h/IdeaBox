@@ -22,7 +22,7 @@ debugLogStart();
 </head>
 <body class="background-color">
     <div class ="form-wrap">
-        <img class="site-icon" src="images/idea-box-icon.png" alt="idea-box-icon">
+        <img class="site-icon" src="images/ideabox_icon.png" alt="ideabox_icon">
         <h1 class ="title">IdeaBox</h1>
         <p class = "catch">アイデアから、アイデアを。</p>
         <form action="" method="post">
@@ -42,11 +42,11 @@ debugLogStart();
 
             <input id="ajax-valid" class="btn form-btn" type="submit" value="新規登録">
         </form>
-        <div class="form-comment">
-        <p>アカウントを作成すると、サービス<a href="">利用規約</a>および<br>
-        <a href="">プライバシーポリシー</a>に同意したとみなされます。</p>
-        <p>すでにアカウントをお持ちですか？<br>
-        <a class="login" href="">ログイン</a></p>
+        <div class="form-comment-wrap">
+        <p class="form-comment">アカウントを作成すると、サービス<a class="link-color3" href="" >利用規約</a>および<br>
+        <a class="link-color3" href="">プライバシーポリシー</a>に同意したとみなされます。</p>
+        <p class="form-comment">すでにアカウントをお持ちですか？<br>
+        <a class="fontsize-m link-color3" href="login.php">ログイン</a></p>
         </div>
     </div>
 </body>

@@ -10,13 +10,13 @@
 <body>
     <header class="header">
         <h1 class="nav-title">
-            <img class="nav-icon" src="images/ideabox_icon.png" alt="idea-box-icon">
-        IdeaBox</h1>
+            <a href="index.php" class="link-color1"><img class="nav-icon" src="images/ideabox_icon.png" alt="idea-box-icon">IdeaBox</a>
+        </h1>
 
             <nav class="nav-menu">
                 <ul class="menu">
-                    <li class="menu-item"><a href="login.php" class="link-color1">login</a></li>
-                    <li class="menu-item"><a href="signup.php" class="link-color1">sign up</a></li>
+                    <li class="menu-item"><a href="login.php" class="link-color1 link-color-change">login</a></li>
+                    <li class="menu-item"><a href="signup.php" class="link-color1 link-color-change">sign up</a></li>
                 </ul>
             </nav>
     </header>
@@ -35,8 +35,8 @@
         <h1 class="top-catch">アイデアを組み合わせて、新しいアイデアを閃こう</h1>
         <p class="top-catch-sub">IdeaBoxはあなたのひらめきをサポートします。</p>
         <button onclick="location.href='signup.php'" class="btn"><a href="signup.php" class="link-color1">無料で新規登録</a></button>
-        <p class="top-comment"><a href="login.php" class="link-color2">すでにアカウントをお持ちですか？<span>ログイン</span></a></p>
-        <p class="top-comment"><a href="login.php" class="link-color2">登録をスキップして利用する</a></p>
+        <p class="top-comment"><a href="login.php" class="link-color2 link-color-change">すでにアカウントをお持ちですか？<span>ログイン</span></a></p>
+        <p class="top-comment"><a href="login.php" class="link-color2 link-color-change">登録をスキップして利用する</a></p>
 
 
         </section>
