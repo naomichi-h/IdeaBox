@@ -203,3 +203,339 @@
     [auth_key_limit] => 1606728712
 )
 
+[30-Nov-2020 20:19:03 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:19:03 Asia/Tokyo] デバッグ：「　パスワードリマインダー認証キー入力ページ　
+[30-Nov-2020 20:19:03 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:19:03 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[30-Nov-2020 20:19:03 Asia/Tokyo] デバッグ：セッションID：264odamtov9lqoc5jad93r25fs
+[30-Nov-2020 20:19:03 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1606726676
+    [login_limit] => 3600
+    [user_id] => 18
+    [msg_success] => メールを送信しました。
+    [auth_key] => IT5fxnD3
+    [auth_email] => naomichi.programming@gmail.com
+    [auth_key_limit] => 1606728712
+)
+
+[30-Nov-2020 20:19:03 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1606735143
+[30-Nov-2020 20:19:03 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1606730276
+[30-Nov-2020 20:19:38 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:19:38 Asia/Tokyo] デバッグ：「　パスワードリマインダー認証キー入力ページ　
+[30-Nov-2020 20:19:38 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:19:38 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[30-Nov-2020 20:19:38 Asia/Tokyo] デバッグ：セッションID：vd18r52dq445j251v87udvd3dm
+[30-Nov-2020 20:19:38 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1606726676
+    [login_limit] => 3600
+    [user_id] => 18
+    [msg_success] => メールを送信しました。
+    [auth_key] => IT5fxnD3
+    [auth_email] => naomichi.programming@gmail.com
+    [auth_key_limit] => 1606728712
+)
+
+[30-Nov-2020 20:19:38 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1606735178
+[30-Nov-2020 20:19:38 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1606730276
+[30-Nov-2020 20:22:06 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:22:06 Asia/Tokyo] デバッグ：「　パスワードリマインダー認証キー入力ページ　
+[30-Nov-2020 20:22:06 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:22:06 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[30-Nov-2020 20:22:06 Asia/Tokyo] デバッグ：セッションID：2rov48f290tm3b4a5q6en7d3j1
+[30-Nov-2020 20:22:06 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1606726676
+    [login_limit] => 3600
+    [user_id] => 18
+    [msg_success] => メールを送信しました。
+    [auth_key] => IT5fxnD3
+    [auth_email] => naomichi.programming@gmail.com
+    [auth_key_limit] => 1606728712
+)
+
+[30-Nov-2020 20:22:06 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1606735326
+[30-Nov-2020 20:22:06 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1606730276
+[30-Nov-2020 20:22:59 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:22:59 Asia/Tokyo] デバッグ：「　パスワードリマインダー認証キー入力ページ　
+[30-Nov-2020 20:22:59 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:22:59 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[30-Nov-2020 20:22:59 Asia/Tokyo] デバッグ：セッションID：bnj9t7dckp6fib4p3hslc57049
+[30-Nov-2020 20:22:59 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1606726676
+    [login_limit] => 3600
+    [user_id] => 18
+    [msg_success] => メールを送信しました。
+    [auth_key] => IT5fxnD3
+    [auth_email] => naomichi.programming@gmail.com
+    [auth_key_limit] => 1606728712
+)
+
+[30-Nov-2020 20:22:59 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1606735379
+[30-Nov-2020 20:22:59 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1606730276
+[30-Nov-2020 20:24:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:24:44 Asia/Tokyo] デバッグ：「　ログインページ　
+[30-Nov-2020 20:24:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:24:44 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[30-Nov-2020 20:24:44 Asia/Tokyo] デバッグ：セッションID：a6c7pbtqludt2bghfnnm0440ic
+[30-Nov-2020 20:24:44 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1606726676
+    [login_limit] => 3600
+    [user_id] => 18
+    [msg_success] => メールを送信しました。
+    [auth_key] => IT5fxnD3
+    [auth_email] => naomichi.programming@gmail.com
+    [auth_key_limit] => 1606728712
+)
+
+[30-Nov-2020 20:24:44 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1606735484
+[30-Nov-2020 20:24:44 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1606730276
+[30-Nov-2020 20:24:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:24:54 Asia/Tokyo] デバッグ：「　ユーザー登録ページ　
+[30-Nov-2020 20:24:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:24:54 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[30-Nov-2020 20:24:54 Asia/Tokyo] デバッグ：セッションID：2l39jtfk7dch0qp5nhumf8qatl
+[30-Nov-2020 20:24:54 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1606726676
+    [login_limit] => 3600
+    [user_id] => 18
+    [msg_success] => メールを送信しました。
+    [auth_key] => IT5fxnD3
+    [auth_email] => naomichi.programming@gmail.com
+    [auth_key_limit] => 1606728712
+)
+
+[30-Nov-2020 20:24:54 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1606735494
+[30-Nov-2020 20:24:54 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1606730276
+[30-Nov-2020 20:24:58 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:24:58 Asia/Tokyo] デバッグ：「　ログインページ　
+[30-Nov-2020 20:24:58 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:24:58 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[30-Nov-2020 20:24:58 Asia/Tokyo] デバッグ：セッションID：uehgc2nkf7blvk9g7va1s4hn85
+[30-Nov-2020 20:24:58 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1606726676
+    [login_limit] => 3600
+    [user_id] => 18
+    [msg_success] => メールを送信しました。
+    [auth_key] => IT5fxnD3
+    [auth_email] => naomichi.programming@gmail.com
+    [auth_key_limit] => 1606728712
+)
+
+[30-Nov-2020 20:24:58 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1606735498
+[30-Nov-2020 20:24:58 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1606730276
+[30-Nov-2020 20:25:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:25:00 Asia/Tokyo] デバッグ：「　ユーザー登録ページ　
+[30-Nov-2020 20:25:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:25:00 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[30-Nov-2020 20:25:00 Asia/Tokyo] デバッグ：セッションID：8qhj9slphjs6qid4gd7pqjen0s
+[30-Nov-2020 20:25:00 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1606726676
+    [login_limit] => 3600
+    [user_id] => 18
+    [msg_success] => メールを送信しました。
+    [auth_key] => IT5fxnD3
+    [auth_email] => naomichi.programming@gmail.com
+    [auth_key_limit] => 1606728712
+)
+
+[30-Nov-2020 20:25:00 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1606735500
+[30-Nov-2020 20:25:00 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1606730276
+[30-Nov-2020 20:25:05 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:25:05 Asia/Tokyo] デバッグ：「　ログインページ　
+[30-Nov-2020 20:25:05 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:25:05 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[30-Nov-2020 20:25:05 Asia/Tokyo] デバッグ：セッションID：1bbg9fve1qjlmc6i2nhe624jj0
+[30-Nov-2020 20:25:05 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1606726676
+    [login_limit] => 3600
+    [user_id] => 18
+    [msg_success] => メールを送信しました。
+    [auth_key] => IT5fxnD3
+    [auth_email] => naomichi.programming@gmail.com
+    [auth_key_limit] => 1606728712
+)
+
+[30-Nov-2020 20:25:05 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1606735505
+[30-Nov-2020 20:25:05 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1606730276
+[30-Nov-2020 20:25:07 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:25:07 Asia/Tokyo] デバッグ：「　パスワードリマインダーページ　
+[30-Nov-2020 20:25:07 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:25:07 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[30-Nov-2020 20:25:07 Asia/Tokyo] デバッグ：セッションID：96ggjf2hg22hquu7qg75sok3pc
+[30-Nov-2020 20:25:07 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1606726676
+    [login_limit] => 3600
+    [user_id] => 18
+    [msg_success] => メールを送信しました。
+    [auth_key] => IT5fxnD3
+    [auth_email] => naomichi.programming@gmail.com
+    [auth_key_limit] => 1606728712
+)
+
+[30-Nov-2020 20:25:07 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1606735507
+[30-Nov-2020 20:25:07 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1606730276
+[30-Nov-2020 20:25:14 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:25:14 Asia/Tokyo] デバッグ：「　ログインページ　
+[30-Nov-2020 20:25:14 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:25:14 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[30-Nov-2020 20:25:14 Asia/Tokyo] デバッグ：セッションID：emhs67p6l3ot4kqv0psld988dl
+[30-Nov-2020 20:25:14 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1606726676
+    [login_limit] => 3600
+    [user_id] => 18
+    [msg_success] => メールを送信しました。
+    [auth_key] => IT5fxnD3
+    [auth_email] => naomichi.programming@gmail.com
+    [auth_key_limit] => 1606728712
+)
+
+[30-Nov-2020 20:25:14 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1606735514
+[30-Nov-2020 20:25:14 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1606730276
+[30-Nov-2020 20:25:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:25:16 Asia/Tokyo] デバッグ：「　パスワードリマインダーページ　
+[30-Nov-2020 20:25:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:25:16 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[30-Nov-2020 20:25:16 Asia/Tokyo] デバッグ：セッションID：mppg10qdk3lk2f1jgvejuapghl
+[30-Nov-2020 20:25:16 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1606726676
+    [login_limit] => 3600
+    [user_id] => 18
+    [msg_success] => メールを送信しました。
+    [auth_key] => IT5fxnD3
+    [auth_email] => naomichi.programming@gmail.com
+    [auth_key_limit] => 1606728712
+)
+
+[30-Nov-2020 20:25:16 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1606735516
+[30-Nov-2020 20:25:16 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1606730276
+[30-Nov-2020 20:25:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:25:31 Asia/Tokyo] デバッグ：「　Ajaxバリデーション処理　
+[30-Nov-2020 20:25:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:25:31 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[30-Nov-2020 20:25:31 Asia/Tokyo] デバッグ：セッションID：jsvuaj0brqemrkqfud55aqrm6j
+[30-Nov-2020 20:25:31 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1606726676
+    [login_limit] => 3600
+    [user_id] => 18
+    [msg_success] => メールを送信しました。
+    [auth_key] => IT5fxnD3
+    [auth_email] => naomichi.programming@gmail.com
+    [auth_key_limit] => 1606728712
+)
+
+[30-Nov-2020 20:25:31 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1606735531
+[30-Nov-2020 20:25:31 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1606730276
+[30-Nov-2020 20:25:31 Asia/Tokyo] デバッグ：バリデーションOK。
+[30-Nov-2020 20:25:31 Asia/Tokyo] デバッグ：クエリ成功。
+[30-Nov-2020 20:25:31 Asia/Tokyo] デバッグ：クエリ成功。DB登録あり。
+[30-Nov-2020 20:25:31 Asia/Tokyo] デバッグ：メールを送信しました。
+[30-Nov-2020 20:25:31 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1606726676
+    [login_limit] => 3600
+    [user_id] => 18
+    [msg_success] => メールを送信しました。
+    [auth_key] => iEHtfl7X
+    [auth_email] => naomichi.programming@gmail.com
+    [auth_key_limit] => 1606737331
+)
+
+[30-Nov-2020 20:25:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:25:31 Asia/Tokyo] デバッグ：「　パスワードリマインダー認証キー入力ページ　
+[30-Nov-2020 20:25:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:25:31 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[30-Nov-2020 20:25:31 Asia/Tokyo] デバッグ：セッションID：djhh5csdc0cvma2pmlm06brg4m
+[30-Nov-2020 20:25:31 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1606726676
+    [login_limit] => 3600
+    [user_id] => 18
+    [msg_success] => メールを送信しました。
+    [auth_key] => iEHtfl7X
+    [auth_email] => naomichi.programming@gmail.com
+    [auth_key_limit] => 1606737331
+)
+
+[30-Nov-2020 20:25:31 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1606735531
+[30-Nov-2020 20:25:31 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1606730276
+[30-Nov-2020 20:25:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:25:36 Asia/Tokyo] デバッグ：「　パスワードリマインダーページ　
+[30-Nov-2020 20:25:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:25:36 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[30-Nov-2020 20:25:36 Asia/Tokyo] デバッグ：セッションID：4kek2efs3v145aorea9attkl1b
+[30-Nov-2020 20:25:36 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1606726676
+    [login_limit] => 3600
+    [user_id] => 18
+    [msg_success] => メールを送信しました。
+    [auth_key] => iEHtfl7X
+    [auth_email] => naomichi.programming@gmail.com
+    [auth_key_limit] => 1606737331
+)
+
+[30-Nov-2020 20:25:36 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1606735536
+[30-Nov-2020 20:25:36 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1606730276
+[30-Nov-2020 20:25:41 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:25:41 Asia/Tokyo] デバッグ：「　Ajaxバリデーション処理　
+[30-Nov-2020 20:25:41 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:25:41 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[30-Nov-2020 20:25:41 Asia/Tokyo] デバッグ：セッションID：41tk5ehj2rckmsvjmi47adissb
+[30-Nov-2020 20:25:41 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1606726676
+    [login_limit] => 3600
+    [user_id] => 18
+    [msg_success] => メールを送信しました。
+    [auth_key] => iEHtfl7X
+    [auth_email] => naomichi.programming@gmail.com
+    [auth_key_limit] => 1606737331
+)
+
+[30-Nov-2020 20:25:41 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1606735541
+[30-Nov-2020 20:25:41 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1606730276
+[30-Nov-2020 20:25:41 Asia/Tokyo] デバッグ：バリデーションOK。
+[30-Nov-2020 20:25:41 Asia/Tokyo] デバッグ：クエリ成功。
+[30-Nov-2020 20:25:41 Asia/Tokyo] デバッグ：クエリ成功。DB登録あり。
+[30-Nov-2020 20:25:41 Asia/Tokyo] デバッグ：メールを送信しました。
+[30-Nov-2020 20:25:41 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1606726676
+    [login_limit] => 3600
+    [user_id] => 18
+    [msg_success] => メールを送信しました。
+    [auth_key] => wSWjf3G4
+    [auth_email] => naomichi.programming@gmail.com
+    [auth_key_limit] => 1606737341
+)
+
+[30-Nov-2020 20:25:41 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:25:41 Asia/Tokyo] デバッグ：「　パスワードリマインダー認証キー入力ページ　
+[30-Nov-2020 20:25:41 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[30-Nov-2020 20:25:41 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[30-Nov-2020 20:25:41 Asia/Tokyo] デバッグ：セッションID：50e1srcqvu1iprnedig5vd9nb9
+[30-Nov-2020 20:25:41 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1606726676
+    [login_limit] => 3600
+    [user_id] => 18
+    [msg_success] => メールを送信しました。
+    [auth_key] => wSWjf3G4
+    [auth_email] => naomichi.programming@gmail.com
+    [auth_key_limit] => 1606737341
+)
+
+[30-Nov-2020 20:25:41 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1606735541
+[30-Nov-2020 20:25:41 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1606730276

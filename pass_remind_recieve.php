@@ -3,9 +3,14 @@
 require('function.php');
 
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
-debug('「　パスワードリマインダーページ　');
+debug('「　パスワードリマインダー認証キー入力ページ　');
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
 debugLogStart();
+
+//SESSIONに認証キーがあるか確認、なければリダイレクト
+if (empty($_SESSION['auth_key'])) {
+    header("Location:passRemindSend.php"); //認証キー送信ページへ
+}
 
 
 ?>
@@ -17,7 +22,7 @@ debugLogStart();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IdeaBox | ログイン</title>
+    <title>IdeaBox | パスワード再発行認証</title>
     <link rel="stylesheet" type="text/css" href="node_modules/ress/dist/ress.min.css" >
     <link rel="stylesheet" type="text/css" href="css/style.css" >
 </head>
@@ -29,19 +34,21 @@ debugLogStart();
         <p class = "catch">アイデアから、アイデアを。</p>
         </a>
         <div class="form-container">
-            <p class="form-comment">ご指定のメールアドレス宛にパスワード再発行の<br>
-            URLと認証キーをお送りいたします</p>
+            <p class="form-comment">ご指定のメールアドレスにお送りした<br>
+            【パスワード再発行認証】<br>
+            メール内にある「認証キー」をご入力ください
+            </p>
             <form action="" method="post">
 
-                <input class="form-input js-email" type="text" name="email" placeholder="Eメール">
-                <div class="area-msg js-msg-email">
+                <input class="form-input js-token" type="text" name="token" placeholder="認証キー">
+                <div class="area-msg js-msg-token">
                 </div>
 
-                <input id="ajax-valid" class="btn form-btn" type="submit" value="送信する">
+                <input id="ajax-valid" class="btn form-btn" type="submit" value="再発行する">
             </form>
         </div>
         <div class="form-comment">
-        <p><a href="login.php" class="link-color3">&lt; ログインページに戻る</a></p>
+        <p><a href="pass_remind_send.php" class="link-color3">&lt; パスワード再発行メールを再度送信する</a></p>
         </div>
     </div>
 </body>
@@ -49,5 +56,5 @@ debugLogStart();
   src="https://code.jquery.com/jquery-3.5.1.min.js"
   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
   crossorigin="anonymous"></script>
-<script src="js/ajax_pass_remind_send.js"></script>
+<script src="js/ajax_pass_remind_recieve.js"></script>
 </html>

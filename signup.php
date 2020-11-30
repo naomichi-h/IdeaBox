@@ -22,9 +22,11 @@ debugLogStart();
 </head>
 <body class="background-color">
     <div class ="form-wrap">
+        <a href="index.php">
         <img class="site-icon" src="images/ideabox_icon.png" alt="ideabox_icon">
         <h1 class ="title">IdeaBox</h1>
         <p class = "catch">アイデアから、アイデアを。</p>
+        </a>
         <form action="" method="post">
 
             <input class="form-input js-email" type="text" name="email" placeholder="Eメール">

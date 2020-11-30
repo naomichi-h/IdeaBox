@@ -274,11 +274,11 @@ function queryPost($dbh, $sql, $data)
 function sendMail($from, $to, $subject, $comment)
 {
     if (!empty($to) && !empty($subject) && !empty($comment)) {
-        //文字化けしないように設定（お決まりパターン）
-        mb_language("Japanese"); //現在使っている言語を設定する
-        mb_internal_encoding("UTF-8"); //内部の日本語をどうエンコーディング（機械が分かる言葉へ変換）するかを設定
+        //文字化けしないように設定
+        mb_language("Japanese");
+        mb_internal_encoding("UTF-8");
         
-        //メールを送信（送信結果はtrueかfalseで返ってくる）
+        
         $result = mb_send_mail($to, $subject, $comment, "From: ".$from);
         //送信結果を判定
         if ($result) {
