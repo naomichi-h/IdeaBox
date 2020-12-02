@@ -12,7 +12,7 @@ $(function () {
 
       data: {
         //登録フォームの入力データを送信
-        email: $(".js-token").val(),
+        token: $(".js-token").val(),
       },
     }).done(function (data) {
       //バリデーションに通れば画面を遷移する
